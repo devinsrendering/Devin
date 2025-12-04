@@ -1,6 +1,3 @@
-/* =======================
-   Global Styles
-   ======================= */
 html {
     font-size: 18px;
     box-sizing: border-box;
@@ -297,19 +294,46 @@ button:hover, .back-home-btn:hover {
     box-shadow: 0 4px 10px rgba(255,122,0,0.6);
 }
 
-/* Responsive Adjustments */
+/* =======================
+   Responsive Adjustments
+   ======================= */
 @media (max-width: 700px) {
     .about-me-inner {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column;  /* stack vertically */
+        align-items: center;     /* center items */
+        text-align: center;      /* center text */
     }
-    
+
     .about-photo {
-        margin: 0 auto;
+        margin-bottom: 20px;     /* spacing below image */
+    }
+
+    .about-text {
+        flex: unset;             /* remove flex stretch */
     }
 
     .social-icons {
-        justify-content: center;
+        justify-content: center; /* center social icons */
+    }
+}
+
+@media (max-width: 500px) {
+    .about-text {
+        padding: 0 10px;         /* prevent text from touching edges */
+    }
+
+    .about-text h2 {
+        font-size: 24px;         /* slightly smaller heading */
+    }
+
+    .about-text p {
+        font-size: 15px;         /* slightly smaller paragraph text */
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
     }
 }
 
