@@ -308,11 +308,15 @@ button:hover, .back-home-btn:hover {
     }
 
     .about-photo {
-        margin-bottom: 20px;
+        margin: 0 auto 20px auto;
+        flex: unset;
+        width: 60%;
+        max-width: 200px;
     }
 
     .about-text {
         flex: unset;
+        width: 90%;
     }
 
     .social-icons {
@@ -362,10 +366,10 @@ button:hover, .back-home-btn:hover {
 
 .practice-card {
     background: #111;
-    border: 2px solid #ff7a00;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    border: 2px solid #ff7a00; /* match section boxes */
+    border-radius: 18px; /* match section boxes */
+    padding: 25px; /* match section boxes */
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25); /* match section boxes */
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
